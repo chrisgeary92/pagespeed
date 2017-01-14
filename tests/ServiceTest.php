@@ -40,4 +40,13 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($url, $response['id']);
         $this->assertEquals(200, $response['responseCode']);
     }
+
+    /** @test */
+    public function it_throws_exceptions_for_failed_pagespeed_checks()
+    {
+        $this->expectException('Chrisgeary92\Pagespeed\PagespeedException');
+
+        $service = new Service();
+        $response = $service->runPagespeed('test');
+    }
 }
