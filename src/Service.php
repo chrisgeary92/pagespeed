@@ -19,14 +19,22 @@ class Service
      *
      * @param string $url
      * @param array $arguments
-     * @return GuzzleHttp\Psr7\Response
+     * @return array
+     * @throws PagespeedException
      */ 
     public function runPagespeed($url, array $arguments = [])
     {
         $request = $this->getPagespeedRequest($url, $arguments);
         $client = new Client();
 
-        return $client->send($request);
+        try {
+            $response = $client->send($request);
+        } catch (\GuzzleHttp\Exception\RequestException $e) {
+            $message = \GuzzleHttp\Psr7\str($e->getResponse());
+            throw new PagespeedException($message);
+        }
+
+        return json_decode($response->getBody(), true);
     }
 
     /**

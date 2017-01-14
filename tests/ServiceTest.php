@@ -28,4 +28,16 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertArrayHasKey('strategy', $return);
         $this->assertArrayHasKey('screenshot', $return);
     }
+
+    /** @test */
+    public function it_can_successfully_test_a_public_webpage()
+    {
+        $url = 'https://github.com/chrisgeary92/pagespeed';
+
+        $service = new Service();
+        $response = $service->runPagespeed($url);
+
+        $this->assertEquals($url, $response['id']);
+        $this->assertEquals(200, $response['responseCode']);
+    }
 }
