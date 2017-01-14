@@ -1,0 +1,22 @@
+{
+    "name": "chrisgeary92/pagespeed",
+    "description": "Gain webpage performance insights with Google PageSpeed Insights.",
+    "homepage": "https://github.com/chrisgeary92/pagespeed",
+    "license": "MIT",
+    "keywords": ["pagespeed", "psi"],
+    "authors": [
+        {
+            "name": "Christopher Geary",
+            "email": "dev@crgeary.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chrisgeary92\\Pagespeed\\": "src/"
+        }
+    }
+}
