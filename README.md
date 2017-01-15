@@ -2,6 +2,8 @@
 
 Gain webpage performance insights with Google PageSpeed Insights.
 
+[![Build Status](https://travis-ci.org/chrisgeary92/pagespeed.svg?branch=master)](https://travis-ci.org/chrisgeary92/pagespeed)
+
 * * *
 
 ## Usage
