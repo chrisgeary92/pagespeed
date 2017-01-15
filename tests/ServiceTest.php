@@ -3,6 +3,7 @@
 namespace Chrisgeary92\Pagespeed\Test;
 
 use Chrisgeary92\Pagespeed\Service;
+use Chrisgeary92\Pagespeed\PagespeedException;
 
 class ServiceTest extends \PHPUnit_Framework_TestCase
 {
@@ -11,7 +12,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     {
         $service = new Service();
 
-        $this->assertInstanceOf('Chrisgeary92\Pagespeed\Service', $service);
+        $this->assertInstanceOf(Service::class, $service);
     }
 
     /** @test */
@@ -44,7 +45,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     /** @test */
     public function it_throws_exceptions_for_failed_pagespeed_checks()
     {
-        $this->expectException('Chrisgeary92\Pagespeed\PagespeedException');
+        $this->expectException(PagespeedException::class);
 
         $service = new Service();
         $response = $service->runPagespeed('test');
