@@ -38,8 +38,8 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
         $service = new Service();
         $response = $service->runPagespeed($url);
 
-        $this->assertEquals($url, $response['id']);
-        $this->assertEquals(200, $response['responseCode']);
+        $this->assertEquals($url, $response->id);
+        $this->assertEquals(200, $response->responseCode);
     }
 
     /** @test */

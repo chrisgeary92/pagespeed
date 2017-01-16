@@ -34,7 +34,9 @@ class Service
             throw new PagespeedException($message);
         }
 
-        return json_decode($response->getBody(), true);
+        $data = json_decode($response->getBody(), true);
+
+        return new Response($data);
     }
 
     /**
