@@ -22,6 +22,16 @@ class Response
     }
 
     /**
+     * Return API response from PageSpeed Service
+     *
+     * @return array
+     */
+    public function getAttributes()
+    {
+        return $this->attributes;
+    }
+
+    /**
      * Allow public access of $attribute properties
      *
      * @param string $attribute
@@ -51,6 +61,6 @@ class Response
      */
     public function __debugInfo()
     {
-        return $this->attributes;
+        return $this->getAttributes();
     }
 }
