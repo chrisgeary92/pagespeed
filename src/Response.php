@@ -51,7 +51,7 @@ class Response
      */
     public function __toString()
     {
-        return json_encode($this->data);
+        return json_encode($this->attributes);
     }
 
     /**
