@@ -1,6 +1,6 @@
 <?php
 
-namespace Chrisgeary92\Pagespeed;
+namespace Crgeary\Pagespeed;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;

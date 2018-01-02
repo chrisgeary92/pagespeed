@@ -1,7 +1,7 @@
 {
-    "name": "chrisgeary92/pagespeed",
+    "name": "crgeary/pagespeed",
     "description": "Gain webpage performance insights with Google PageSpeed Insights.",
-    "homepage": "https://github.com/chrisgeary92/pagespeed",
+    "homepage": "https://github.com/crgeary/pagespeed",
     "license": "MIT",
     "version": "0.1.0",
     "keywords": ["pagespeed", "psi"],
@@ -20,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Chrisgeary92\\Pagespeed\\": "src/"
+            "Crgeary\\Pagespeed\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Chrisgeary92\\Pagespeed\\Test\\": "tests/"
+            "Crgeary\\Pagespeed\\Test\\": "tests/"
         }
     },
     "scripts": {

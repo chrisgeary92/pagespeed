@@ -1,9 +1,9 @@
 <?php
 
-namespace Chrisgeary92\Pagespeed\Test;
+namespace Crgeary\Pagespeed\Test;
 
-use Chrisgeary92\Pagespeed\Service;
-use Chrisgeary92\Pagespeed\PagespeedException;
+use Crgeary\Pagespeed\Service;
+use Crgeary\Pagespeed\PagespeedException;
 
 class ServiceTest extends \PHPUnit_Framework_TestCase
 {
@@ -33,7 +33,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     /** @test */
     public function it_can_successfully_test_a_public_webpage()
     {
-        $url = 'https://github.com/chrisgeary92/pagespeed';
+        $url = 'https://github.com/crgeary/pagespeed';
 
         $service = new Service();
         $response = $service->runPagespeed($url);

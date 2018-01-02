@@ -2,7 +2,7 @@
 
 Gain webpage performance insights with Google PageSpeed Insights.
 
-[![Build Status](https://travis-ci.org/chrisgeary92/pagespeed.svg?branch=master)](https://travis-ci.org/chrisgeary92/pagespeed)
+[![Build Status](https://travis-ci.org/crgeary/pagespeed.svg?branch=master)](https://travis-ci.org/crgeary/pagespeed)
 
 * * *
 
@@ -11,9 +11,9 @@ Gain webpage performance insights with Google PageSpeed Insights.
 See the [PageSpeed API reference](https://developers.google.com/speed/docs/insights/v2/reference/pagespeedapi/runpagespeed) for a list of optional parameters.
 
 ````php
-$pagespeed = new \Chrisgeary92\Pagespeed\Service();
+$pagespeed = new \Crgeary\Pagespeed\Service();
 
-$data = $pagespeed->runPagespeed('https://github.com/chrisgeary92/pagespeed', [
+$data = $pagespeed->runPagespeed('https://github.com/crgeary/pagespeed', [
     'key' => 'your-pagespeed-api-key',
     'screenshot' => true
 ]);

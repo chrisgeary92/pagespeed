@@ -1,6 +1,6 @@
 <?php
 
-namespace Chrisgeary92\Pagespeed;
+namespace Crgeary\Pagespeed;
 
 class Response
 {
