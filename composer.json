@@ -3,7 +3,7 @@
     "description": "Gain webpage performance insights with Google PageSpeed Insights.",
     "homepage": "https://github.com/crgeary/pagespeed",
     "license": "MIT",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "keywords": ["pagespeed", "psi"],
     "authors": [
         {
